@@ -1,45 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Tehreem CI/CD Deployment</title>
-  <style>
-    body {
-      color: maroon;
-      background-color: beige;
-      font-family: Times New Roman, Arial, sans-serif;
-      font-size: 14px;
-    }
-    
-    h1 {
-      font-size: 500%;
-      font-weight: bold;
-      margin-bottom: 0;
-    }
-    
-    h2 {
-      font-size: 200%;
-	font-style: italic;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <link rel='stylesheet' href='style.css'/>
 </head>
 <body>
-	<header>
-        <nav>
-          <ul>
-            <li><a href="index.html">Index</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="story.html">Story</a></li>
-          </ul>
-        </nav>
-      </header>
-  <div align="center">
-    <h1>Congratulations!Welcome to CS-524-A</h1>
-    <h2>About CI/CD:</h2>
-    <p>CI/CD is fast becoming a standard right now and CI/CD (Continuous Integration and Continuous Delivery/Deployment) is the term often associated with development and release of a software in the DevOps process. In simple terms, CI (Continuous Integration) is a process that allows developers to integrate their code in the main shared repository, multiple times a day and providing them with instant feedback about possible broken functionality or tests. Instead of building and integrating software work products from different teams/people at the end of the development cycle, with Continuous Integration you can build it at regular intervals. This helps developers to meet the code quality standards, resolve bugs early and reduces integration cost.</p>
-  </div>
+    <header>
+        <h1>Palindrome Checker</h1>
+    </header>
+    <div id="error" class ="error" hidden></div>
+
+    <form method = "POST" id="myForm">
+        <label>
+            Enter Phrase:</label>
+            <textarea id="text_input" name="phrase" placeholder="Enter a Phrase to Test"></textarea>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        
+        
+        
+        </form>
+        <ol id ="attempts" class ="is-palindrome not-palindrome">
+            
+        </ol>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <footer>
+     <p>Tehreem Tungekar CWID: 10457940</p>   
+    </footer>
+    <script src='script.js'></script>
 </body>
 </html>
-
